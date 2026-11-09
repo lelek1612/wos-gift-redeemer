@@ -11,9 +11,9 @@ That is the whole mechanism; everything else here is hygiene (dedupe, state
 file, rate limits, readable exit codes).
 
 Usage:
-    ./redeemer.py --player-id 12345678 --state 4351
-    ./redeemer.py --player-id 12345678 --state 4351 --dry-run
-    ./redeemer.py --config config.json
+    redeemer.py --player-id 12345678 --state 4351
+    redeemer.py --player-id 12345678 --state 4351 --dry-run
+    redeemer.py --config config.json
 
 Exit codes: 0 everything attempted (see summary), 2 bad usage, 3 network down.
 """
@@ -72,7 +72,7 @@ TRANSIENT = {"TIMEOUT RETRY"}
 
 def log(msg: str) -> None:
     ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    print(f"{ts}  {msg}", flush=True)
+    print(f"{ts}  {msg}", file=sys.stderr, flush=True)  # stdout is reserved for --json / --dry-run
 
 
 def sign(payload: dict) -> str:
