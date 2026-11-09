@@ -2,7 +2,7 @@
 name: wos-gift-codes
 description: Auto-redeem Whiteout Survival gift codes on a quiet cron.
 version: 0.1.0
-author: J J, Hermes Agent
+author: lelek1612, Hermes Agent
 license: MIT
 platforms: [linux, macos]
 metadata:
