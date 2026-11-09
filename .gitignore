@@ -1,0 +1,10 @@
+# Sekrety i stan lokalny
+config.json
+*.local.json
+redeem.log
+redeemed_codes.txt
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
