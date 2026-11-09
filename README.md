@@ -60,7 +60,7 @@ nothing unless a code was redeemed or something needs attention, and it does not
 repeat the same alert.
 
 ```bash
-hermes skills install <owner>/wos-gift-redeemer/wos-gift-codes
+hermes skills install lelek1612/wos-gift-redeemer/wos-gift-codes
 ```
 
 ## Statuses
